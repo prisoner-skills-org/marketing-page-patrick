@@ -18,5 +18,21 @@ header {
       text-decoration: none;
       color: @dark;
     }
+
+    @media @phone {
+      flex-direction: column;
+    }
+  }
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+
+    nav {
+      width: 100%;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

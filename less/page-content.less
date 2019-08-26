@@ -15,6 +15,10 @@
   padding: 2.5% 0;
   margin: 2.5% 0;
   border-bottom: 2px solid @secondary;
+
+  @media @phone {
+    flex-direction: column;
+  }
 }
 .pitch {
   flex-direction: column;
@@ -25,6 +29,10 @@
 }
 .reverse-content {
   flex-direction: row-reverse;
+
+  @media @phone {
+    flex-direction: column;
+  }
 }
 
 .text-content {
