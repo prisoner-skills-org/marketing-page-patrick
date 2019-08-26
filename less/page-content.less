@@ -1,17 +1,23 @@
 .image-top {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   img {
-    object-fit: cover;
+    object-fit: scale-down;
     object-position: 100% 15%;
+
+    @media @phone {
+      object-fit: cover;
+    }
+  }
+
+  @media @phone {
+    height: 33vh;
   }
 }
 
 .content-section {
   width: 90%;
   display: flex;
-  //justify-content: space-between;
-  //margin: 2.5% 0%;
   padding: 2.5% 0;
   margin: 2.5% 0;
   border-bottom: 2px solid @secondary;
@@ -21,10 +27,36 @@
   }
 }
 .pitch {
-  flex-direction: column;
+  flex-direction: row;
+
+  @media @phone {
+    flex-direction: column;
+  }
 
   h2 {
-    margin-bottom: 0%;
+    width: 100%;
+  }
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .button {
+      text-decoration: none;
+      color: white;
+      background: @primary;
+      width: 100%;
+      margin: 5% 0;
+      border-radius: 10px;
+      max-height: 50px;
+      max-width: 200px;
+      line-height: 1;
+
+      @media @phone {
+        max-width: 100%;
+      }
+    }
   }
 }
 .reverse-content {
@@ -38,18 +70,4 @@
 .text-content {
   width: 100%;
   padding: 0 2.5%;
-}
-
-.button {
-  text-decoration: none;
-  color: white;
-  background: @primary;
-  width: 30%;
-  margin: 10px 0;
-  align-self: center;
-  border-radius: 10px;
-
-  @media @phone {
-    width: 100%;
-  }
 }
