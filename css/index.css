@@ -218,11 +218,12 @@ header nav a {
 }
 .image-top img {
   object-fit: scale-down;
-  object-position: 100% 15%;
+  object-position: 50% 15%;
 }
 @media screen and (max-device-width: 840px) {
   .image-top img {
     object-fit: cover;
+    object-position: 100% 15%;
   }
 }
 @media screen and (max-device-width: 840px) {
@@ -244,6 +245,7 @@ header nav a {
 }
 .pitch {
   flex-direction: row;
+  justify-content: space-between;
 }
 @media screen and (max-device-width: 840px) {
   .pitch {
