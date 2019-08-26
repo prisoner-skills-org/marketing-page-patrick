@@ -133,6 +133,11 @@ table {
 html {
   font-size: 62.5%;
 }
+@media screen and (max-device-width: 840px) {
+  html {
+    font-size: 70%;
+  }
+}
 .body {
   display: flex;
   flex-direction: column;
@@ -150,11 +155,21 @@ h1 {
 h2 {
   font-size: 3rem;
 }
+@media screen and (max-device-width: 840px) {
+  h2 {
+    line-height: 1.5;
+  }
+}
 h3 {
   font-size: 2rem;
 }
 p {
   font-size: 1.65rem;
+}
+@media screen and (max-device-width: 840px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 a {
   padding: 15px 5%;
@@ -184,6 +199,7 @@ header {
 }
 header h2 {
   color: black;
+  border-bottom: 2px solid #868e96;
 }
 header nav {
   display: flex;
