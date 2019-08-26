@@ -250,6 +250,20 @@ header nav a {
   width: 100%;
   padding: 0 2.5%;
 }
+.button {
+  text-decoration: none;
+  color: white;
+  background: #007bff;
+  width: 30%;
+  margin: 10px 0;
+  align-self: center;
+  border-radius: 10px;
+}
+@media screen and (max-device-width: 840px) {
+  .button {
+    width: 100%;
+  }
+}
 footer {
   display: flex;
   align-items: baseline;
