@@ -100,7 +100,21 @@
   }
 
   .team-member {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     //border: 1px solid red;
+    img {
+      //width: auto;
+    }
+  }
+
+  @media @phone {
+    .team-role {
+      flex-direction: column;
+    }
+    .team-member {
+      width: 100%;
+    }
   }
 }

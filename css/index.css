@@ -327,7 +327,17 @@ header nav a {
   padding: 5%;
 }
 .team .team-member {
+  display: flex;
+  flex-direction: column;
   width: 30%;
+}
+@media screen and (max-device-width: 840px) {
+  .team .team-role {
+    flex-direction: column;
+  }
+  .team .team-member {
+    width: 100%;
+  }
 }
 footer {
   display: flex;
