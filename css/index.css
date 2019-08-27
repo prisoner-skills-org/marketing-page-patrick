@@ -325,11 +325,13 @@ header nav a {
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 5%;
+  flex-wrap: wrap;
 }
 .team .team-member {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
+  padding: 2.5%;
 }
 @media screen and (max-device-width: 840px) {
   .team .team-role {
