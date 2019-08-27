@@ -147,7 +147,7 @@ html {
 h1,
 h2,
 h3 {
-  color: #343a40;
+  color: #0066cc;
 }
 h1 {
   font-size: 4rem;
@@ -179,8 +179,8 @@ a {
   font-size: 1.65rem;
 }
 a:hover {
-  background-color: #007bff;
-  color: #343a40;
+  background-color: #0066cc;
+  color: white;
   text-decoration: underline;
 }
 img {
@@ -195,8 +195,12 @@ header {
   align-items: baseline;
   justify-content: space-between;
   width: 100%;
-  background: #007bff;
+  background: white;
   padding: 2.5%;
+}
+header img {
+  background-color: white;
+  width: 30%;
 }
 header h2 {
   color: white;
@@ -209,12 +213,15 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: white;
+  color: #343a40;
 }
 @media screen and (max-device-width: 840px) {
   header {
     flex-direction: column;
     align-items: center;
+  }
+  header img {
+    width: 100%;
   }
   header nav {
     width: 100%;
@@ -280,7 +287,7 @@ header nav a {
 .pitch .text-content .button {
   text-decoration: none;
   color: white;
-  background: #007bff;
+  background: #0066cc;
   width: 100%;
   margin: 5% 0;
   border-radius: 10px;
