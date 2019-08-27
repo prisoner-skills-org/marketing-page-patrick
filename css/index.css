@@ -248,8 +248,8 @@ header nav a {
   }
 }
 .content-section {
-  width: 90%;
   display: flex;
+  width: 90%;
   padding: 2.5% 0;
   margin: 2.5% 0;
   border-bottom: 2px solid #868e96;
@@ -304,6 +304,30 @@ header nav a {
 .text-content {
   width: 100%;
   padding: 0 2.5%;
+}
+.about-content {
+  display: flex;
+  width: 90%;
+  padding: 2.5% 0;
+  margin: 2.5% 0;
+  border-bottom: 2px solid #868e96;
+}
+@media screen and (max-device-width: 840px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+.team {
+  flex-direction: column;
+}
+.team .team-role {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5%;
+}
+.team .team-member {
+  width: 30%;
 }
 footer {
   display: flex;
