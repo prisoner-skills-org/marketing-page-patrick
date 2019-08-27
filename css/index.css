@@ -181,6 +181,7 @@ a {
 a:hover {
   background-color: #007bff;
   color: #343a40;
+  text-decoration: underline;
 }
 img {
   height: 100%;
@@ -194,11 +195,11 @@ header {
   align-items: baseline;
   justify-content: space-between;
   width: 100%;
-  background: white;
+  background: #007bff;
   padding: 2.5%;
 }
 header h2 {
-  color: black;
+  color: white;
   border-bottom: 2px solid #868e96;
 }
 header nav {
@@ -208,12 +209,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #343a40;
-}
-@media screen and (max-device-width: 840px) {
-  header nav {
-    flex-direction: column;
-  }
+  color: white;
 }
 @media screen and (max-device-width: 840px) {
   header {
@@ -222,6 +218,10 @@ header nav a {
   }
   header nav {
     width: 100%;
+    flex-direction: column;
+  }
+  header nav a {
+    border-bottom: 1px solid #868e96;
   }
   header h2 {
     width: 100%;
