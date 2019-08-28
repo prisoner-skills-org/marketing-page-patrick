@@ -338,11 +338,22 @@ header nav a {
   flex-wrap: wrap;
   border-bottom: 1px solid #343a40;
 }
+.team .team-role a {
+  text-align: left;
+}
+.team .team-role a:hover {
+  color: white;
+}
+.team .team-role a:hover h3 {
+  color: white;
+}
 .team .team-member {
   display: flex;
   flex-direction: column;
   width: 40%;
   padding: 2.5%;
+  text-decoration: none;
+  color: #343a40;
 }
 @media screen and (max-device-width: 840px) {
   .team .team-role {
