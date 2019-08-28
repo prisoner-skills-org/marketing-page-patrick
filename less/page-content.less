@@ -24,10 +24,11 @@
   margin: 2.5% 0;
   border-bottom: 2px solid @secondary;
 
-  @media @phone {
+  @media @narrow {
     flex-direction: column;
   }
 }
+
 .pitch {
   flex-direction: row;
   justify-content: space-between;
@@ -66,7 +67,7 @@
 .reverse-content {
   flex-direction: row-reverse;
 
-  @media @phone {
+  @media @narrow {
     flex-direction: column;
   }
 }
@@ -74,6 +75,11 @@
 .text-content {
   width: 100%;
   padding: 0 2.5%;
+
+  @media @narrow {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
 }
 
 .about-content {

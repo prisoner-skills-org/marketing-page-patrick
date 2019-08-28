@@ -262,7 +262,7 @@ header nav a {
   margin: 2.5% 0;
   border-bottom: 2px solid #868e96;
 }
-@media screen and (max-device-width: 840px) {
+@media  screen and (max-width: 950px) {
   .content-section {
     flex-direction: column;
   }
@@ -305,7 +305,7 @@ header nav a {
 .reverse-content {
   flex-direction: row-reverse;
 }
-@media screen and (max-device-width: 840px) {
+@media  screen and (max-width: 950px) {
   .reverse-content {
     flex-direction: column;
   }
@@ -313,6 +313,12 @@ header nav a {
 .text-content {
   width: 100%;
   padding: 0 2.5%;
+}
+@media  screen and (max-width: 950px) {
+  .text-content {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
 }
 .about-content {
   display: flex;
