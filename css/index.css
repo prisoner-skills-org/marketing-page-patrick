@@ -215,7 +215,7 @@ header nav a {
   text-decoration: none;
   color: #343a40;
 }
-@media  screen and (max-width: 630px) {
+@media  screen and (max-width: 650px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -265,7 +265,7 @@ header nav a {
   object-fit: scale-down;
   object-position: 50% 15%;
 }
-@media  screen and (max-width: 630px) {
+@media  screen and (max-width: 650px) {
   .image-top img {
     object-fit: cover;
     object-position: 100% 15%;
@@ -277,7 +277,7 @@ header nav a {
     object-position: 100% 15%;
   }
 }
-@media  screen and (max-width: 630px) {
+@media  screen and (max-width: 650px) {
   .image-top {
     height: 33vh;
   }
@@ -309,7 +309,7 @@ header nav a {
     flex-direction: column;
   }
 }
-@media  screen and (max-width: 630px) {
+@media  screen and (max-width: 650px) {
   .pitch {
     flex-direction: column;
   }
@@ -406,6 +406,45 @@ header nav a {
     width: 100%;
   }
 }
+/*footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+  padding: 2.5%;
+
+  h2 {
+    color: black;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+
+    a {
+      text-decoration: none;
+      color: @dark;
+    }
+
+    @media @phone {
+      flex-direction: column;
+    }
+  }
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+
+    nav {
+      width: 100%;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+*/
 footer {
   display: flex;
   align-items: baseline;
@@ -414,21 +453,42 @@ footer {
   background: white;
   padding: 2.5%;
 }
+footer img {
+  background-color: white;
+  width: 30%;
+}
 footer h2 {
-  color: black;
+  color: white;
+  border-bottom: 2px solid #868e96;
 }
 footer nav {
   display: flex;
   justify-content: space-evenly;
-  width: 30%;
+  width: 50%;
 }
 footer nav a {
   text-decoration: none;
   color: #343a40;
 }
-@media screen and (max-device-width: 840px) {
-  footer nav {
+@media  screen and (max-width: 650px) {
+  footer {
     flex-direction: column;
+    align-items: center;
+  }
+  footer img {
+    width: 100%;
+  }
+  footer nav {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+  footer nav a {
+    border-bottom: 1px solid #868e96;
+  }
+  footer h2 {
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-device-width: 840px) {
@@ -436,8 +496,16 @@ footer nav a {
     flex-direction: column;
     align-items: center;
   }
+  footer img {
+    width: 100%;
+  }
   footer nav {
     width: 100%;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+  footer nav a {
+    border-bottom: 1px solid #868e96;
   }
   footer h2 {
     width: 100%;
