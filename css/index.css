@@ -209,11 +209,32 @@ header h2 {
 header nav {
   display: flex;
   justify-content: space-evenly;
-  width: 30%;
+  width: 50%;
 }
 header nav a {
   text-decoration: none;
   color: #343a40;
+}
+@media  screen and (max-width: 630px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    width: 100%;
+  }
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+  header nav a {
+    border-bottom: 1px solid #868e96;
+  }
+  header h2 {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-device-width: 840px) {
   header {
@@ -244,10 +265,21 @@ header nav a {
   object-fit: scale-down;
   object-position: 50% 15%;
 }
+@media  screen and (max-width: 630px) {
+  .image-top img {
+    object-fit: cover;
+    object-position: 100% 15%;
+  }
+}
 @media screen and (max-device-width: 840px) {
   .image-top img {
     object-fit: cover;
     object-position: 100% 15%;
+  }
+}
+@media  screen and (max-width: 630px) {
+  .image-top {
+    height: 33vh;
   }
 }
 @media screen and (max-device-width: 840px) {
@@ -273,6 +305,11 @@ header nav a {
   border-top: 2px solid #868e96;
 }
 @media screen and (max-device-width: 840px) {
+  .pitch {
+    flex-direction: column;
+  }
+}
+@media  screen and (max-width: 630px) {
   .pitch {
     flex-direction: column;
   }

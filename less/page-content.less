@@ -6,10 +6,19 @@
     object-fit: scale-down;
     object-position: 50% 15%;
 
+    @media @realNarrow {
+      object-fit: cover;
+      object-position: 100% 15%;
+    }
+
     @media @phone {
       object-fit: cover;
       object-position: 100% 15%;
     }
+  }
+
+  @media @realNarrow {
+    height: 33vh;
   }
 
   @media @phone {
@@ -38,6 +47,9 @@
     flex-direction: column;
   }
 
+  @media @realNarrow {
+    flex-direction: column;
+  }
   h2 {
     width: 100%;
   }
