@@ -270,6 +270,7 @@ header nav a {
 .pitch {
   flex-direction: row;
   justify-content: space-between;
+  border-top: 2px solid #868e96;
 }
 @media screen and (max-device-width: 840px) {
   .pitch {
@@ -318,6 +319,7 @@ header nav a {
   width: 90%;
   padding: 2.5% 0;
   margin: 2.5% 0;
+  border-top: 2px solid #868e96;
 }
 @media screen and (max-device-width: 840px) {
   .about-content {
