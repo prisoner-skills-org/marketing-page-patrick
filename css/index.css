@@ -406,6 +406,14 @@ header nav a {
     width: 100%;
   }
 }
+@media  screen and (max-width: 650px) {
+  .team .team-role {
+    flex-direction: column;
+  }
+  .team .team-member {
+    width: 100%;
+  }
+}
 .contact {
   width: 90%;
   border-top: 2px solid #868e96;
